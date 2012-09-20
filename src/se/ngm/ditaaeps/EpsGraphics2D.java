@@ -169,7 +169,7 @@ public class EpsGraphics2D extends Graphics2D {
     private void printFont() {
         if(isFontDirty) {
             out.println("/Times-Roman findfont");
-            out.println(""+font.getSize()+" scalefont setfont");
+            out.println((font.getSize() * 4 / 3) + " scalefont setfont");
             isFontDirty = false;
         }
     }
